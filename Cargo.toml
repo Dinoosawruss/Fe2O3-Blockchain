@@ -1,0 +1,20 @@
+[package]
+name = "blockchain"
+version = "0.1.0"
+authors = ["Michael Dormand <m.dormand@sky.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "blockchainlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "blockchain"
+path = "src/main.rs"
+
+[dependencies]
+hex = "0.4"
+crypto-hash = "0.3.4"
+openssl = { version = "0.10", features = ["vendored"] }
